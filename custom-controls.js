@@ -24,8 +24,8 @@ const observer = new MutationObserver(function (mutations) {
                     const speedButton = document.getElementById("speed");
                     speedButton.addEventListener(
                         "change",
-                        (speed) => { 
-                            (video.playbackRate != speed.target.value) ? video.playbackRate = speed.target.value : video.playbackRate = 1 
+                        (speed) => {
+                            (video.playbackRate != speed.target.value) ? video.playbackRate = speed.target.value : video.playbackRate = 1
                         }
                     )
                     $("#exit").click(function () {
