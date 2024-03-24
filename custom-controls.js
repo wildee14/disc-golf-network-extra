@@ -49,6 +49,7 @@ const observer = new MutationObserver(function (mutations) {
                         var videoPanel = document.evaluate("/html/body/div/div/div[2]", document, null, 
                             XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                         videoPanel.style.width='100%'
+                        videoPanel.style.height='100%-6rem'
                         videoPanel.style.left='0'
                         videoPanel.style.top='6rem'
                     });
