@@ -10,6 +10,7 @@
 
 - Fast Forward/Rewind By 10 Seconds
 - Playback Speed Of Stream (0.5x,1.5x,2.0x)
+- Expand To Full Width
 
 ## Upcoming Features (Hopefully)
 - One Click To Current Livestream
