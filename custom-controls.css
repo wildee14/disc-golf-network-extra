@@ -1,0 +1,20 @@
+#customControls {
+    display: contents
+}
+#handlePlayer:hover > #customControls {
+    display:block
+}
+#player1 > #customControls {
+    display: none;     
+}
+#player1:hover > #customControls {
+    display:block
+}
+.controlButton {
+    position:sticky;
+    width:1em;
+}
+.speed {
+    float:right; 
+    cursor:pointer;
+}

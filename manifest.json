@@ -5,7 +5,8 @@
     "version": "2.0",
     "content_scripts": [{
         "matches": ["https://www.discgolfnetwork.com/*"],
-        "js": ["jquery-3.7.1.min.js","custom-controls.js"]
+        "js": ["jquery-3.7.1.min.js","custom-controls.js"],
+        "css": ["custom-controls.css"]
     }],
     "icons": {
         "16": "icons/icon16.png",
