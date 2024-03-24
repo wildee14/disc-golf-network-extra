@@ -3,10 +3,6 @@
     "name": "Unofficial Disc Golf Network Extra",
     "description": "Quality Of Life Fixes For DGN",
     "version": "2.0",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "default_icon.png"
-    },
     "content_scripts": [{
         "matches": ["https://www.discgolfnetwork.com/*"],
         "js": ["jquery-3.7.1.min.js","custom-controls.js"]
