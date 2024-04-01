@@ -2,8 +2,12 @@ const observer = new MutationObserver(function (mutations) {
     for (const mutation of mutations) {
         if (mutation.type === 'childList') {
             for (const _ of mutation.addedNodes) {
-                const video = document.evaluate("/html/body/div/div/div[2]/div/div/div/div[1]/video", document, null,
+                                                 
+                const firstvideo = document.evaluate("/html/body/div[1]/div/div[2]/div/div/div/div[1]/video", document, null,
                     XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                const secondvideo = document.evaluate("/html/body/div/div/div[2]/div/div/div/div[1]/video", document, null,
+                    XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                const video = firstvideo ? firstvideo : (secondvideo ? secondvideo : null)
                 if (video) {
                     const watchButton = document.evaluate("/html/body/div/div/main/section/div/section/div[2]/div[1]/button[1]", document, null,
                         XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
