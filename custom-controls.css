@@ -1,20 +1,49 @@
 #customControls {
     display: contents
 }
-#handlePlayer:hover > #customControls {
-    display:block
+
+#handlePlayer:hover>#customControls {
+    display: block
 }
-#player1 > #customControls {
-    display: none;     
+
+#player1>#customControls {
+    display: none;
 }
-#player1:hover > #customControls {
-    display:block
+
+#player1:hover>#customControls {
+    display: block
 }
-.controlButton {
-    position:sticky;
-    width:1em;
-}
+
 .speed {
-    float:right; 
-    cursor:pointer;
+    float: right;
+    cursor: pointer;
+}
+
+.controlButtons {
+    position: sticky;
+    width: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-family: refrigerator-deluxe, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: .06em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    background: #fe4254;
+    color: #fff;
 }

@@ -7,8 +7,7 @@ const observer = new MutationObserver(function (mutations) {
                 if (video) {
                     const watchButton = document.evaluate("/html/body/div/div/main/section/div/section/div[2]/div[1]/button[1]", document, null,
                         XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-
-                    const controlButton = (id, icon) => `<button class='${watchButton.className} controlButton' id='${id}' ><i class='material-icons' style='font-size:2rem;margin:0;'>${icon}</i></button>`
+                    const controlButton = (id, icon) => `<button class='controlButtons' id='${id}' ><i class='material-icons' style='font-size:2rem;margin:0;'>${icon}</i></button>`
 
                     const controlDeck = ` 
                 <div id='customControls'>
@@ -24,6 +23,7 @@ const observer = new MutationObserver(function (mutations) {
                             <option selected value='1'>1x</option>
                             <option value='1.5'>1.5x</option>
                             <option value='2'>2x</option>
+                            <option value='3'>3x</option>
                         </select>
                     </div>
                 </div>`
